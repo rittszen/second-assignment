@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Imran Khan - Modern Profile</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    color:#333;
+}
+
+/* Header */
+header{
+    background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('https://upload.wikimedia.org/wikipedia/commons/5/5e/Imran_Khan_2019.jpg') center/cover;
+    height:100vh;
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+header h1{
+    font-size:3rem;
+}
+
+header p{
+    margin:15px 0;
+    font-size:1.2rem;
+}
+
+header button{
+    padding:12px 25px;
+    border:none;
+    background:#00a651;
+    color:white;
+    font-size:1rem;
+    cursor:pointer;
+    border-radius:25px;
+    transition:0.3s;
+}
+
+header button:hover{
+    background:white;
+    color:#00a651;
+}
+
+/* Navbar */
+nav{
+    background:#00a651;
+    padding:15px;
+    position:sticky;
+    top:0;
+    text-align:center;
+}
+
+
+nav a{
+    color:white;
+    margin:0 15px;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:black;
+}
+
+/* Sections */
+section{
+    padding:60px 10%;
+    text-align:center;
+}
+
+section h2{
+    margin-bottom:20px;
+    font-size:2rem;
+    color:#00a651;
+}
+
+/* Cards */
+.card-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    width:280px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+/* Video */
+iframe{
+    border-radius:10px;
+    margin-top:20px;
+}
+
+/* Form */
+form{
+    max-width:400px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+input, textarea{
+    padding:10px;
+    border-radius:5px;
+    border:1px solid #ccc;
+}
+
+form button{
+    padding:10px;
+    background:#00a651;
+    color:white;
+    border:none;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+form button:hover{
+    background:#007f3f;
+}
+
+/* Footer */
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:40px;
+}
+
+@media(max-width:768px){
+    header h1{
+        font-size:2rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Hero Section -->
+<header>
+    <h1>Imran Khan</h1>
+    <p>Cricket Legend | Political Leader | Former Prime Minister of Pakistan</p>
+    <button onclick="document.getElementById('about').scrollIntoView();">
+        Explore More
+    </button>
+</header>
+
+<!-- Navigation -->
+<nav>
+    <a href="#about">About</a>
+    <a href="#career">Career</a>
+    <a href="#video">Video</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- About -->
+<section id="about">
+    <h2>About</h2>
+    <p>
+        Imran Khan is a former Pakistani international cricketer and politician.
+        He led Pakistan to victory in the 1992 Cricket World Cup and later became
+        the 22nd Prime Minister of Pakistan (2018–2022).
+    </p>
+    <p>
+        Learn more on 
+        <a href="https://en.wikipedia.org/wiki/Imran_Khan" target="_blank">Wikipedia</a>.
+    </p>
+</section>
+
+<!-- Career Cards -->
+<section id="career">
+    <h2>Career Highlights</h2>
+    <div class="card-container">
+        <div class="card">
+            <h3>1992 World Cup</h3>
+            <p>Led Pakistan to its first Cricket World Cup victory.</p>
+        </div>
+        <div class="card">
+            <h3>PTI Founder</h3>
+            <p>Founded Pakistan Tehreek-e-Insaf (PTI) in 1996.</p>
+        </div>
+        <div class="card">
+            <h3>Prime Minister</h3>
+            <p>Served as the 22nd Prime Minister of Pakistan.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Video -->
+<section id="video">
+    <h2>Watch Video</h2>
+    <iframe width="560" height="315"
+        src="https://www.youtube.com/embed/0n1b6tY9X0Y"
+        allowfullscreen>
+    </iframe>
+</section>
+
+<!-- Contact Form -->
+<section id="contact">
+    <h2>Contact</h2>
+    <form>
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea rows="4" placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+ <!-- Image -->
+        <img src="C:\Users\iqbal\Pictures\KHAN.webp" 
+             alt="Imran Khan" width="400" height="">
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 Imran Khan Modern Web Page | Designed for Learning</p>
+</footer>
+
+</body>
+</html>
